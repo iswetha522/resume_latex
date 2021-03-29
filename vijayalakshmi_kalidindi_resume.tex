@@ -1,0 +1,162 @@
+%-------------------------
+% Resume in Latex
+% Author : Pradeep Dantuluri
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\rightmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\pubItem}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} &   \\
+      \textit{\small#2} &   \\
+      \small#3 &  \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://iswetha522.github.io}{\Large Vijayalakshmi Kalidindi}}  & Mobile : +31 6388 62904 \\
+  Email : \href{mailto:iswetha522@gmail.com}{iswetha522@gmail.com} \\
+\end{tabular*}
+
+\vspace{7pt}
+Short Summary
+
+%-------- SKILLS------------
+
+\vspace{-14pt}
+\section{}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Expertise}{: Skill1, Skill2}
+    }
+    \item{
+     \textbf{Areas of Interest}{: Interest1 }
+    }
+    \item{
+     \textbf{Technologies}{: Tech 1, Tech2 }
+    }
+ \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Comapany Name}{City , Country}
+      {Role}{Date from - Date to}
+      \resumeItemListStart
+        \item{Description 1}
+        \item{Description 2}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Comapany Name}{City , Country}
+      {Role}{Date from - Date to}
+      \resumeItemListStart\resumeItem{Heading 1}
+          { Description 1}
+        \resumeItem{Heading 2}
+          { Description 2}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Side Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Company}{City, Country}
+      {Role}{Date from -- Date to}
+      \resumeItemListStart
+        \item { Description 1}
+        \item { Description 2}
+        \resumeItem{Technologies Used}
+          {Tech 1, Tech 2 }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {College Name }{City, Country}
+      {Degree name}{ From -- To}     
+      \resumeItemListStart
+        \resumeItem{Header 1} 
+          {Description 1}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
